@@ -8,8 +8,8 @@ cantor_plot().savefig('cantor_pairing.svg', transparent=True)
 from szudzik import szudzik_plot
 szudzik_plot().savefig('szudzik_pairing.svg', transparent=True)
 
-from hagen import hagen_plot
-hagen_plot().savefig('hagen_pairing.svg', transparent=True)
+from peter import peter_plot
+peter_plot().savefig('peter_pairing.svg', transparent=True)
 
 from alternative import alternative_plot
 alternative_plot().savefig('alternative_pairing.svg', transparent=True)

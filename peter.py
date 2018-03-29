@@ -2,7 +2,7 @@ from typing import Iterable
 from math import floor, sqrt
 
 
-def hagen_product(stream1: Iterable, stream2: Iterable):
+def peter_product(stream1: Iterable, stream2: Iterable):
     shell = 0
     max_element1 = next(iter(stream1))
     max_element2 = next(iter(stream2))
@@ -29,7 +29,7 @@ def hagen_product(stream1: Iterable, stream2: Iterable):
         shell = shell + 1
 
 
-def hagen_pairing(index1: int, index2: int):
+def peter_pairing(index1: int, index2: int):
     shell = max(index1, index2)
     step = min(index1, index2)
     if step == index2:
@@ -39,7 +39,7 @@ def hagen_pairing(index1: int, index2: int):
     return shell ** 2 + step * 2 + flag
 
 
-def hagen_unpairing(index: int):
+def peter_unpairing(index: int):
     shell = floor(sqrt(index))
     remainder = index - shell ** 2
     step = floor(remainder / 2)
@@ -49,10 +49,10 @@ def hagen_unpairing(index: int):
         return [step, shell]
 
 
-def hagen_plot():
+def peter_plot():
     from general import pairing_function_plot
 
-    points = [hagen_unpairing(i) for i in range(16)]
+    points = [peter_unpairing(i) for i in range(16)]
     arrows = [
         [0, 0, 1, 0],
         [1, 0, 0, 1],
@@ -77,5 +77,5 @@ def hagen_plot():
 if __name__ == '__main__':
     from general import assert_consistancy
 
-    hagen_plot().show()
-    assert_consistancy(hagen_product, hagen_pairing, hagen_unpairing)
+    peter_plot().show()
+    assert_consistancy(peter_product, peter_pairing, peter_unpairing)

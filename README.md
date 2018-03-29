@@ -12,8 +12,8 @@ There are four methods described in the post, each of which is coded up in a sep
 
 * `cantor.py`: The [original pairing function](https://en.wikipedia.org/wiki/Pairing_function) by George Cantor
 * `szudzik.py`: The [elegant pairing function](http://szudzik.com/ElegantPairing.pdf) by Matthew Szudzik
-* `hagen.py`: The superior pairing function by me
-* `alternative.py`: The alternative pairing function, also by me
+* `peter.py`: The superior pairing function by Rozsa Peter
+* `alternative.py`: The alternative pairing function by me
 
 Each method has three functions associated with it:
 
