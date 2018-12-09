@@ -75,7 +75,7 @@ def peter_plot():
 
 
 if __name__ == '__main__':
-    from general import assert_consistancy
+    from general import assert_consistency
 
     peter_plot().show()
-    assert_consistancy(peter_product, peter_pairing, peter_unpairing)
+    assert_consistency(peter_product, peter_pairing, peter_unpairing)

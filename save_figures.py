@@ -13,3 +13,10 @@ peter_plot().savefig('peter_pairing.svg', transparent=True)
 
 from alternative import alternative_plot
 alternative_plot().savefig('alternative_pairing.svg', transparent=True)
+
+from multidimensional_box import multidimensional_box_plot
+multidimensional_box_plot().savefig('multidimensional_box_pairing.svg', transparent=True)
+
+from multidimensional_szudzik import multidimensional_recursive_szudzik_plot, multidimensional_sorted_szudzik_plot
+multidimensional_recursive_szudzik_plot().savefig('multidimensional_recursive_szudzik_pairing.svg', transparent=True)
+multidimensional_sorted_szudzik_plot().savefig('multidimensional_sorted_szudzik_pairing.svg', transparent=True)

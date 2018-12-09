@@ -65,7 +65,7 @@ def szudzik_plot():
 
 
 if __name__ == '__main__':
-    from general import assert_consistancy
+    from general import assert_consistency
 
     szudzik_plot().show()
-    assert_consistancy(szudzik_product, szudzik_pairing, szudzik_unpairing)
+    assert_consistency(szudzik_product, szudzik_pairing, szudzik_unpairing)

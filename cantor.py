@@ -60,7 +60,7 @@ def cantor_plot():
 
 
 if __name__ == '__main__':
-    from general import assert_consistancy
+    from general import assert_consistency
 
     cantor_plot().show()
-    assert_consistancy(cantor_product, cantor_pairing, cantor_unpairing)
+    assert_consistency(cantor_product, cantor_pairing, cantor_unpairing)

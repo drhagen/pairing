@@ -82,7 +82,7 @@ def alternative_plot():
 
 
 if __name__ == '__main__':
-    from general import assert_consistancy
+    from general import assert_consistency
 
     alternative_plot().show()
-    assert_consistancy(alternative_product, alternative_pairing, alternative_unpairing)
+    assert_consistency(alternative_product, alternative_pairing, alternative_unpairing)
